@@ -1,9 +1,123 @@
-body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #8fa9d8;
-    background: #e6e6e6;
-  }
 
- 
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color:#3f3f3f;
+}
+
+.screen {
+    padding: 20px 40px;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.436);
+    color: white;
+}
+
+.placeholder {
+    opacity: 0.2;
+}
+
+
+.controller {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+  
+.kiri, .kanan {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.kiri {
+    gap: 10px;
+    width: 200px;
+    position: relative;
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.436);
+    color: white;
+}
+  
+.kiri {
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+  
+.kiri .btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    border: 1px solid #333;
+    background: #eee;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 60px; 
+}
+  
+.kiri .btn:hover {
+    background: #ccc;
+}
+
+.kiri .btn:active {
+    background: #adadad;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+  
+.kanan {
+    background: #fff;
+    flex-direction: row;
+    gap: 20px;
+    width: 180px;
+    justify-content: center;
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.436);
+    color: white;
+}
+  
+.action-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    background: rgb(117, 143, 255);
+    font-weight: bold;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+  
+.action-btn:hover {
+    background: rgb(33, 33, 34);
+}
+
+.action-btn:active {
+    background: rgb(40, 39, 41);
+    transform: translateY(4px);
+}
+
+
+.info {
+    margin-top: 30px;
+    font-size: 8px;
+    color: #ffffff;
+    text-align: right;
+    width: 100%;
+}
+  
+.info a {
+    color: #ffffff;
+}
